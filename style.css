@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    margin-top: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    display: flex;
+    width: 90%;
+    justify-content:center;
+    padding-left: 10%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+nav>img{
+    margin-right: 60px;
+}
+#nav-container{
+    width: 80%;
+}
+#nav-container p{
+    cursor: pointer;
+}
+.UpMenu{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    font-weight: bold;
+    color: rgb(85, 83, 83);
+}
+.UpMenu>div{
+    width: 10%;
+}
+.DownMenu{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    font-size: 18px;
+    /* font-weight: bold; */
+    color: rgb(54, 53, 53);
+}
+
+.loc{
+    color: blue;
+}
+.loc>span{
+    color: red;
+}
+.srh{
+    color: grey;
+}
+
+#orderBtn{
+    padding: 12px 30px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    background-color: #ffbc0d;
+    font-size: 15px;
+    transition: all 0.25s ease-out;
+    cursor: pointer;
+}
+#orderBtn:hover{
+    background-color: yellow;
+}
+
+#SlideShowContainer{
+    text-align: center;
+    /* display: none; */
+   
+}
+#SlideShowContainer>h1{
+    font-size: 60px;
+    color: rgb(47, 45, 45);
+    
+}
+#slideshow>img{
+    width: 90%;
+}
+
+#PopupOrderMenu{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(110, 104, 104, 0.371);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#orderMenu{
+    width: 70%;
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+    overflow: scroll;
+ 
+    
+}
+#orderMenu>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    /* background-color: #ffbc0d; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 40px;
+    margin: 5px;
+}
+#placeOrder{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    background-color: #ffbc0d;
+    transition: all 0.3s ease-out;
+    border: 1px solid grey;
+    font-size: large;
+    cursor: pointer;
+}
+#placeOrder:hover{
+    background-color: yellow
+}
+#closepopUp{
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-size: larger;
+    align-self: flex-end;
+    margin-right: 13%;
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+#closepopUp:hover{
+    background-color: red;
+}
+
+#FinalOrder{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(110, 104, 104, 0.371);
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#orderId{
+    text-align: right;
+    /* height: 30%; */
+    margin-right: 20px;
+    font-size: larger;
+    margin-top: 20px;
+}
+#orderId>p{
+    background-color: #ffbc0d;
+    display: inline;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    
+}
+
+#orderId>h2{
+    text-align: center;
+    /* margin-right: 45%; */
+    color: #ffbc0d;
+    font-size: 50px;
+
+}
+
+
+#myOrdersDiv{
+    width: 70%;
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+#myOrders{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+#myOrders>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#myOrders>div>img{
+    width: 100px;
+}
+
+#OrderDone{
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    background-color: #ffbc0d;
+    transition: all 0.3s ease-out;
+    border: 1px solid grey;
+    font-size: large;
+    cursor: pointer;
+}
+#OrderDone:hover{
+    background-color: yellow
+}
+
